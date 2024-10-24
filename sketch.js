@@ -12,7 +12,7 @@ let campoIdade;
 let campoFantasia;
 let campoAventura;
 function setup() {
-  createCanvas(1000, 400);
+  createCanvas(900, 400);
   createElement("h2", "Recomendador de filmes");
   createSpan("Sua idade:");
   campoIdade = createInput("10");
@@ -28,7 +28,7 @@ function draw() {
 
   fill(color(76,0,110));
   textAlign(CENTER, CENTER);
-  textSize(38);
+  textSize(30);
   text(recomendacao, width / 2, height /2 );}
 
 function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
@@ -40,7 +40,7 @@ function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
         if(gostaDeAventura) {
           return "Cruela";          
         } else{
-         return "madagascar";
+         return "Madagascar";
         }
       } else {
         if (gostaDeAventura) {
